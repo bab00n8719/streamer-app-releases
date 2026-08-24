@@ -1,4 +1,4 @@
-# bab00n's Streamer
+#  Streamer
 
 A desktop IPTV player for **Windows, Linux and macOS**. Log in with your Xtream Codes account, browse live TV, movies and series — playback runs in **VLC**, controlled straight from the app.
 
