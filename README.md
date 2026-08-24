@@ -1,6 +1,8 @@
-#  Streamer
+# Streamer
 
 A desktop IPTV player for **Windows, Linux and macOS**. Log in with your Xtream Codes account, browse live TV, movies and series — playback runs in **VLC**, controlled straight from the app.
+
+> ⚠️ **Xtream Codes only.** The app works exclusively with providers that offer the **Xtream Codes API** (server URL + username + password). Plain M3U playlist URLs, Stalker portals or other IPTV formats are **not supported**.
 
 > This repository hosts the **releases** of the app. Grab the latest version from the [Releases page](../../releases/latest).
 
@@ -23,11 +25,13 @@ A desktop IPTV player for **Windows, Linux and macOS**. Log in with your Xtream 
 | --- | --- |
 | Windows | `C:\Program Files\VideoLAN\VLC\vlc.exe` |
 | macOS | `/Applications/VLC.app` |
-| Linux | `vlc` available in `PATH` |
+| Linux | `vlc` available in `PATH` (e.g. `sudo apt install vlc`) |
 
 Get VLC at [videolan.org](https://www.videolan.org/vlc/).
 
 > ⚠️ **The 64-bit version of VLC is required.** On Windows, the 32-bit VLC installs to `C:\Program Files (x86)\...`, where the app will not find it — make sure to download the **64-bit installer** from the VLC site.
+
+You also need an **IPTV subscription with Xtream Codes credentials** (server URL, username, password) — see the note at the top: other formats like plain M3U are not supported. This app does not provide any content.
 
 ## Installation
 
@@ -41,6 +45,30 @@ Download the file for your platform from the [latest release](../../releases/lat
 ## Updates
 
 The app checks for new releases every few hours and shows a notification with a link to this page — download and install the new version over the old one. Your login, favorites, queue and watch progress are kept.
+
+## Troubleshooting
+
+**Nothing shows up in the queue / playback doesn't start / "Open Vlc" does nothing**
+
+The app most likely cannot find or reach VLC. Check in this order:
+
+1. **Is VLC installed at the expected location?** See the table under *Requirements*. The app does not search anywhere else.
+2. **Windows: did you install the 32-bit VLC by accident?** It lives in `C:\Program Files (x86)\VideoLAN\VLC` — the app won't find it there. Uninstall it and install the **64-bit** version.
+3. **Quick test:** click *Open Vlc* in the app. If no VLC window appears, it's one of the two points above.
+
+**VLC opens, but items never appear in the queue**
+
+An old VLC window from a previous session may still be running with a stale configuration. Close **all** VLC windows, then restart the app and use *Open Vlc* again.
+
+**Still stuck?**
+
+Attach the app log when reporting the issue:
+
+| Platform | Log file |
+| --- | --- |
+| Windows | `%APPDATA%\streamer\logs\main.log` |
+| macOS | `~/Library/Logs/streamer/main.log` |
+| Linux | `~/.config/streamer/logs/main.log` |
 
 ## Disclaimer
 
