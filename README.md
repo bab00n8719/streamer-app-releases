@@ -63,7 +63,7 @@ internet with this misleading message.
 Until then, remove the quarantine flag once after installing:
 
 ```bash
-xattr -cr /Applications/bab00nsStreamer.app
+xattr -cr /Applications/b00nplay.app
 ```
 **Nothing shows up in the queue / playback doesn't start / "Open Vlc" does nothing**
 
