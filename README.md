@@ -40,13 +40,30 @@ Download the file for your platform from the [latest release](../../releases/lat
 - **Windows**: run `streamer-x.y.z-setup.exe`
 - **Linux (AppImage, recommended)**: `chmod +x streamer-x.y.z.AppImage`, then run it
 - **Linux (deb)**: `sudo dpkg -i streamer_x.y.z_amd64.deb`
-- **macOS**: open the `.dmg` and drag the app into Applications. The build is unsigned — on first start, right-click the app and choose *Open*.
+- **macOS**: open the `.dmg` and drag the app into Applications.
+  ⚠️ The macOS build is **not signed yet** (proper signing & notarization
+  is planned) — macOS will therefore claim the app *"is damaged and can't
+  be opened"*. It isn't damaged; see
+  [macOS says the app "is damaged"](#macos-says-the-app-is-damaged-and-cant-be-opened)
+  for the one-line fix.
 
 ## Updates
 
 The app checks for new releases every few hours and shows a notification with a link to this page — download and install the new version over the old one. Your login, favorites, queue and watch progress are kept.
 
 ## Troubleshooting
+
+**macOS says the app "is damaged and can't be opened"**
+
+The app is fine — the macOS build is currently **not signed or notarized**
+(that requires a paid Apple developer subscription; it's planned for a
+future release). macOS flags every unsigned app downloaded from the
+internet with this misleading message.
+
+Until then, remove the quarantine flag once after installing:
+
+``bash
+xattr -cr /Applications/bab00nsStreamer.app
 
 **Nothing shows up in the queue / playback doesn't start / "Open Vlc" does nothing**
 
