@@ -17,7 +17,7 @@ A desktop IPTV player for **Windows, Linux and macOS**. Log in with your Xtream 
 
 ## Requirements
 
-**VLC media player** must be installed:
+**VLC media player (64-bit)** must be installed:
 
 | Platform | Expected location |
 | --- | --- |
@@ -27,7 +27,7 @@ A desktop IPTV player for **Windows, Linux and macOS**. Log in with your Xtream 
 
 Get VLC at [videolan.org](https://www.videolan.org/vlc/).
 
-You also need an **IPTV subscription with Xtream Codes credentials** (server URL, username, password). This app does not provide any content.
+> ⚠️ **The 64-bit version of VLC is required.** On Windows, the 32-bit VLC installs to `C:\Program Files (x86)\...`, where the app will not find it — make sure to download the **64-bit installer** from the VLC site.
 
 ## Installation
 
