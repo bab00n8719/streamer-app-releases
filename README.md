@@ -64,7 +64,7 @@ Until then, remove the quarantine flag once after installing:
 
 ```bash
 xattr -cr /Applications/bab00nsStreamer.app
-
+```
 **Nothing shows up in the queue / playback doesn't start / "Open Vlc" does nothing**
 
 The app most likely cannot find or reach VLC. Check in this order:
