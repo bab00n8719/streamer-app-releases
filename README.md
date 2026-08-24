@@ -72,4 +72,9 @@ Attach the app log when reporting the issue:
 
 ## Disclaimer
 
-This app is a player/frontend only. It streams whatever your IPTV provider serves — no content is included, hosted or provided.
+This app is a **player/frontend only** — comparable to a media player like VLC itself. It does not include, host, index, advertise or provide any content, channels or subscriptions. It only plays whatever the IPTV provider behind the credentials **you** enter serves.
+
+- **You are responsible for what you watch.** Depending on your country, streaming content from providers that do not hold the proper licenses may be **illegal** and can be prosecuted. It is your duty to make sure your IPTV provider is legitimate and properly licensed.
+- The developers of this app have **no relationship with any IPTV provider**, do not sell or recommend subscriptions, and assume **no liability** for how this software is used.
+- Use this software only with content you are legally entitled to access.
+
